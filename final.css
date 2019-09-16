@@ -1,0 +1,16 @@
+.accesorios{
+  font-size: 30px;
+  font-family: 'Work Sans', sans-serif;
+}
+.active-cyan input[type=text] {
+border-bottom: 1px solid #4dd0e1;
+box-shadow: 0 1px 0 0 #4dd0e1;
+}
+
+li{
+  list-style: none;
+}
+
+.nav-link{
+  font-family: 'Work Sans', sans-serif;
+}
