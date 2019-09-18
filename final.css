@@ -15,8 +15,210 @@ li{
   font-family: 'Work Sans', sans-serif;
 }
 body{
-
-
  font-family: 'Raleway', sans-serif;
-
 }
+
+
+/* ------ INICIO FAQ ------ */
+#faq {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 15px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#faq ul {
+  text-align: left;
+}
+
+#faq .no-select,
+#faq h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#faq h1 {
+  color: #000;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+#faq h2 {
+  color: #cc071e;
+
+  font-size: 20px;
+  line-height: 34px;
+  text-align: left;
+  padding: 15px 15px 0;
+  text-transform: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#faq p {
+  color: #333;
+  text-align: left;
+
+  font-size: 14px;
+  line-height: 1.45;
+  position: relative;
+  overflow: hidden;
+  max-height: 250px;
+  will-change: max-height;
+  contain: layout;
+  display: inline-block;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 0 50px 0 15px;
+  transition: 0.3s opacity, 0.6s max-height;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  z-index: 2;
+}
+
+#faq ul li {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
+  -webkit-tap-highlight-color: transparent;
+}
+#faq ul li + li {
+  margin-top: 15px;
+}
+#faq ul li:last-of-type {
+  padding-bottom: 0;
+}
+#faq ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 28px;
+  right: 15px;
+}
+#faq ul li i:before,
+#faq ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #cc071e;
+  width: 3px;
+  height: 9px;
+}
+#faq ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+#faq ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+#faq ul li input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  touch-action: manipulation;
+}
+#faq ul li input[type="checkbox"]:checked ~ h2 {
+  color: #000;
+}
+#faq ul li input[type="checkbox"]:checked ~ p {
+  max-height: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+#faq ul li input[type="checkbox"]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+#faq ul li input[type="checkbox"]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+/* ------ FIN FAQ ------ */
+
+/* INICIO REGISTER */
+h1.heading {
+  margin: 20px 0 15px 0;
+  overflow: hidden;
+  text-align: center;
+}
+h1.heading:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h1.heading:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+h1.heading:before,
+h1.heading:after {
+  background-color: rgb(0, 0, 0);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+div.form-group {
+  background-color: rgb(228, 228, 228);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+
+hr.hr {
+  color: black;
+}
+
+.alerticon {
+  color: red;
+}
+
+em {
+  color: red;
+}
+
+p.requerido {
+  color: #ff0000;
+}
+
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+
+#logfaceandgoogle {
+  margin-top: 45px;
+  padding: 33px 0px 0px 0px;
+  border-top: rgba(0, 0, 0, 0.856) 1px solid;
+}
+
+button.btn.btn-lg.btn-google.btn-block.text-uppercase,
+button.btn.btn-lg.btn-facebook.btn-block.text-uppercase {
+  text-align: center;
+  /* width: 35%; */
+  margin-right: auto;
+}
+/* FIN REGISTER */

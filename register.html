@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../Final/final.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:600&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <!--Navbar -->
+  <nav class="mb-1 navbar navbar-expand-lg navbar-dark  orange darken-4">
+    <a class="navbar-brand" href="Final.html">GoodBuy!</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Final.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="FAQ.html">Preguntas Frecuentes</a>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <input class="form-control" type="search" placeholder="Ej: Notebook DELL" aria-label="Search">
+        <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Buscar</button>
+     </form>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-default"
+            aria-labelledby="navbarDropdownMenuLink-333">
+            <a class="dropdown-item" href="login.html">Login</a>
+            <a class="dropdown-item" href="register.html">Registracion</a>
+            <a class="dropdown-item" href="Contacto.html">Contacto</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+  <!-- Registracion -->
+  <div class="container">
+       <!-- Text input-->
+       <!-- head form completo -->
+       <h1 class="heading">Registro de Usuario</h1>
+       <!-- input datos de la cuenta-->
+       <div class="form-group">
+           <h4>Datos de la Cuenta</h4>
+
+           <div class="col-md-4 inputGroupContainer">
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                   <input name="email" placeholder="E-Mail" class="form-control" type="text" required> <em>*</em>
+               </div>
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                   <input type="password" name="pass" placeholder="Contraseña" class="form-control" type="text"
+                       required> <em>*</em>
+               </div>
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                   <input type="password" name="pass" placeholder="Confirmar Contraseña" class="form-control"
+                       type="text" required> <em>*</em>
+               </div>
+           </div>
+           <div class="container" id="logfaceandgoogle">
+               <div class="container">
+                   <button class="btn btn-lg btn-google btn-block text-uppercase col-md-4 text-white" style="background-color: #ea4335;" type="submit"><i
+                           class="fab fa-google mr-2 text-white"></i> Ingresar con Google</button>
+                   <button class="btn btn-lg btn-facebook btn-block text-uppercase col-md-4 text-white" style="background-color: #3b5998;" type="submit"><i
+                           class="fab fa-facebook-f mr-2 text-white"></i> Ingresar con Facebook</button>
+               </div>
+           </div>
+       </div>
+       <!-- section form informacion personal -->
+       <div class="form-group">
+           <h4>Informacion Personal</h4>
+           <label class="col-md-4 control-label"></label>
+           <div class="col-md-4 inputGroupContainer">
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                   <input name="first_name" placeholder="Nombre" class="form-control" type="text" required>
+                   <em>*</em>
+               </div>
+
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                   <input name="last_name" placeholder="Apellido" class="form-control" type="text" required>
+                   <em>*</em>
+               </div>
+
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                   <input name="dniocuit" placeholder="DNI o CUIT" class="form-control" type="text" required>
+                   <em>*</em>
+               </div>
+
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                   <input name="phone" placeholder="(0381)156101165" class="form-control" type="text" required>
+                   <em>*</em>
+               </div>
+
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                   <select name="state" class="form-control selectpicker" required>
+                       <option disabled selected=" ">Selecciona tu provincia:</option>
+                       <option value="ba">Buenos Aires</option>
+                       <option value="cat">Catamarca</option>
+                       <option value="cho">Chaco</option>
+                       <option value="cht">Chubut</option>
+                       <option value="cba">Córdoba</option>
+                       <option value="cor">Corrientes</option>
+                       <option value="er">Entre Ríos</option>
+                       <option value="fsa">Formosa</option>
+                       <option value="juj">Jujuy</option>
+                       <option value="lp">La Pampa</option>
+                       <option value="lr">La Rioja</option>
+                       <option value="mza">Mendoza</option>
+                       <option value="mis">Misiones</option>
+                       <option value="neu">Neuquén</option>
+                       <option value="rn">Río Negro</option>
+                       <option value="sal">Salta</option>
+                       <option value="sj">San Juan</option>
+                       <option value="sc">Santa Cruz</option>
+                       <option value="sf">Santa Fe</option>
+                       <option value="se">Santiago del Estero</option>
+                       <option value="tf">Tierra del Fuego</option>
+                       <option value="tuc">Tucumán</option>
+                   </select>
+               </div>
+
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                   <input name="city" placeholder="Ciudad" class="form-control" type="text" required>
+               </div>
+
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                   <input name="address" placeholder="Dirección" class="form-control" type="text" required>
+               </div>
+
+               <div class="input-group">
+                   <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                   <input name="zip" placeholder="Codigo postal" class="form-control" type="text" required>
+               </div>
+               <div>
+                   <p class="requerido">(<em>*</em>) Campos Requeridos</p>
+               </div>
+
+           </div>
+       </div>
+
+       <!-- Button -->
+       <div class="form-group">
+           <label class="pure-material-checkbox">
+               <input type="checkbox" required>
+               <span>Estoy de acuerdo con los <a href="https://codepen.io/collection/nZKBZe/" target="_blank"
+                       title="Actually not a Terms of Service">Terminos y Condicones</a>.</span>
+           </label>
+           <label class="col-md-4 control-label"></label>
+           <div class="col-md-4">
+               <input class="btn btn-success" type="submit" value="Enviar">
+               <input class="btn btn-danger" type="reset" value="Cancelar">
+           </div>
+       </div>
+   </div>
+
+
+
+   <!-- JQuery -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- Bootstrap tooltips -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+   <!-- Bootstrap core JavaScript -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   <!-- MDB core JavaScript -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
+
+
+</body>
+</html>
