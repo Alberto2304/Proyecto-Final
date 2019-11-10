@@ -62,11 +62,7 @@ if ($_POST) {
 
      ?>
     </header>
-    <?php if(!empty($error)): ?>
-      <div class="">
-        <?php echo $error; ?>
-      </div>
-    <?php endif; ?>
+
     <section class="section">
     <div class="container">
       <div class=" col-sm-12 col-md-12 mt-5">
@@ -94,7 +90,11 @@ if ($_POST) {
                     <label class="custom-control-label" for="defaultLoginFormRemember">Recuerdame</label>
                 </div>
                 <div class="text-center">
-
+                  <?php if(!empty($error)): ?>
+                    <div class="container text-center danger-color-dark">
+                      <?php echo $error; ?>
+                    </div>
+                  <?php endif; ?>
                   <button type="submit" class="btn btn-lg yellow accent-3" name="button">Ingresar</button>
                 </div>
                 <div class="text-center mt-2">
